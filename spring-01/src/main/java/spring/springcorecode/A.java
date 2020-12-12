@@ -1,6 +1,7 @@
 package spring.springcorecode;
 
 public class A {
+    String name = null;
     B bInstance1;
     B bInstance2;
     public A(){

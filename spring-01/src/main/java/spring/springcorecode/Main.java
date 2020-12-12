@@ -10,8 +10,16 @@ public class Main {
         System.out.println(a.bInstance1);
         System.out.println(a.bInstance2);
 
-//        B b = (B)context.getBean("b_in_xml");
-//        System.out.println(b.aInstance);
+        B b = (B)context.getBean("b_in_xml");
+        System.out.println(b.aInstance);
+
+        C c = (C) context.getBean("c_in_xml");
+        System.out.println(c.aInstance);
+
+        b.aInstance.name = "changed";
+        System.out.println(b.aInstance.name);
+        System.out.println(c.aInstance.name);
+
     }
 
 }
