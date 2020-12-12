@@ -9,8 +9,8 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>Serialization_2</module>
+        <module>Serialization</module>
+        <module>spring-01</module>
     </modules>
-
 
 </project>
