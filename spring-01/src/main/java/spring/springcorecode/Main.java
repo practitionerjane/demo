@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("config_springcorecode.xml");
         A a = (A)context.getBean("a_in_xml");
         System.out.println(a.bInstance1);
         System.out.println(a.bInstance2);

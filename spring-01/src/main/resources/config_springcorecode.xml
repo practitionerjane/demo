@@ -3,7 +3,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
     <!--    autowire="byType"-->
-    <bean id="a_in_xml" class="spring.springcorecode.A" depends-on="b_in_xml">
+    <!--    depends-on="b_in_xml"-->
+    <bean id="a_in_xml" class="spring.springcorecode.A">
         <property name="bInstance1">
             <ref bean="b_in_xml"/>
         </property>
@@ -12,13 +13,13 @@ http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
         </property>
     </bean>
     <bean id="b_in_xml" class="spring.springcorecode.B">
-<!--                <property name="aInstance">-->
-<!--                    <ref bean="a_in_xml"/>-->
-<!--                </property>-->
+        <property name="aInstance">
+            <ref bean="a_in_xml"/>
+        </property>
     </bean>
-<!--    <bean id="c_in_xml" class="spring.springcorecode.C">-->
-<!--        <property name="aInstance">-->
-<!--            <ref bean="a_in_xml"/>-->
-<!--        </property>-->
-<!--    </bean>-->
+    <!--    <bean id="c_in_xml" class="spring.springcorecode.C">-->
+    <!--        <property name="aInstance">-->
+    <!--            <ref bean="a_in_xml"/>-->
+    <!--        </property>-->
+    <!--    </bean>-->
 </beans>
