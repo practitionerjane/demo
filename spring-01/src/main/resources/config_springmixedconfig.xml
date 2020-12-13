@@ -1,0 +1,24 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd"
+       xmlns:context="http://www.springframework.org/schema/context">
+
+    <context:component-scan base-package="spring.springmixedconfig"/>
+    <!--    autowire="byType"-->
+    <bean id="a_in_xml" class="spring.springmixedconfig.A">
+        <property name="bInstance1">
+            <ref bean="b"/>
+        </property>
+        <property name="bInstance2">
+            <ref bean="b"/>
+        </property>
+    </bean>
+    <!--    <bean id="b_in_xml" class="spring.springcorecode.B">-->
+    <!--        <property name="aInstance">-->
+    <!--            <ref bean="a_in_xml"/>-->
+    <!--        </property>-->
+    <!--    </bean>-->
+</beans>
