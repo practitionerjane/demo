@@ -1,4 +1,4 @@
-package spring.springcorecode;
+package spring.corecode;
 
 public class C {
     A aInstance;

@@ -4,7 +4,7 @@
 http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
     <!--    autowire="byType"-->
     <!--    depends-on="b_in_xml"-->
-    <bean id="a_in_xml" class="spring.springcorecode.A">
+    <bean id="a_in_xml" class="spring.corecode.A">
         <property name="bInstance1">
             <ref bean="b_in_xml"/>
         </property>
@@ -12,7 +12,7 @@ http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
             <ref bean="b_in_xml"/>
         </property>
     </bean>
-    <bean id="b_in_xml" class="spring.springcorecode.B">
+    <bean id="b_in_xml" class="spring.corecode.B">
         <property name="aInstance">
             <ref bean="a_in_xml"/>
         </property>

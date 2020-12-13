@@ -1,4 +1,4 @@
-package spring.springmixedconfig;
+package spring.mixedconfig;
 
 public class A {
     String name = null;
