@@ -4,7 +4,7 @@ import org.aspectj.lang.annotation.Aspect;
 import org.springframework.stereotype.Component;
 
 @Component
-public class HelloAop {
+public class HelloAop implements Hello{
 
     public HelloAop(){
         System.out.println("in constructor");

@@ -8,7 +8,7 @@ import spring.mixedconfig.B;
 public class Main {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("config_aop.xml");
-        HelloAop a = (HelloAop) context.getBean("helloAop");
+        Hello a = (Hello) context.getBean("helloAop");
         a.hello();
     }
 }

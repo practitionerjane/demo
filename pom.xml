@@ -11,6 +11,7 @@
     <modules>
         <module>Serialization</module>
         <module>spring-01</module>
+        <module>springmvc-01</module>
     </modules>
 
 </project>
